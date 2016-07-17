@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/addBook.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<header class="col-lg-12"><h3 style="margin-top: 0px;"><b>===图书管理===</b></h3></header>
+		<div class="row">
+		<div class="left col-lg-4">
+			<div class="head1" style="text-align: center;">
+				<img src="img/smallbook.jpg" width="40px;"height="40px" />添加图书信息
+			<!--head1 end-->
+			</div>
+			<div class="ul1">
+			<ul>
+				<li><b>书号：</b>图书的ISBN，请务必输入正确，此项不能修改。</li>
+				<li><b>发行日期：</b>请输入该书首次发行的日期，如2016年6月。</li>
+				<li><b>封面文件：</b>请先将图书的封面文件保存到站点的image文件夹下，再输入文件名即可，包括拓展名，如:JSPxxxtkfaljx.jpg。</li>
+				<li><b>是否推荐：</b>选择“是”该图书信息将显示在网站的首页中。</li>
+				<li><b>是否新书：</b>选项“是”该图书信息将显示在“新书上架中”。</li>
+			</ul>
+			<!--ul1 end-->
+			</div>
+			<!--left end-->
+		</div>
+		<div class="right col-lg-7">
+			<form>
+				<table class="table">
+					<tr>
+						<td>书号：</td>
+						<td><input type="text" id="booknum" class="text"/></td>
+						<td>书名：</td>
+						<td><input type="text" id="bookname"class="text"/></td>
+					</tr>
+					<tr>
+						<td>作者：</td>
+						<td><input type="text" id="author"class="text"/></td>
+						<td>类别名称：</td>
+						<td><input type="text" id="sort"class="text"/></td>
+					</tr>
+					<tr>
+						<td>出版社：</td>
+						<td><input type="text" id="output"class="text"/></td>
+						<td>发行日期：</td>
+						<td><input type="text" id="selldate"class="text"/></td>
+					</tr>
+					<tr>
+						<td>封面文件：</td>
+						<td><input type="text" id="face"class="text"/></td>
+						<td>价格：</td>
+						<td><input type="text" id="price"class="text"/>(元)</td>
+					</tr>
+					<tr>
+						<td>是否推荐</td>
+						<td><input type="radio" name="tuijian" value="true"checked="checked"/>
+						是
+						<input type="radio" name="tuijian" value="false"/>否</td>
+						<td>是否新书</td>
+						<td><input type="radio" name="newbook" value="true"checked="checked"/>
+						是
+						<input type="radio" name="newbook" value="false"/>否</td>
+						</td>
+					</tr>
+				</table>
+				<div class="jianjie">
+				<label for="comments">图书简介:</label>
+				</div>
+				<textarea rows="4" cols="120" id="comments"></textarea>
+				<div class="row">   
+  <div class="col-lg-3"><button type="submit" class="btn btn-block btn-primary">保存</button></div>
+  <div class="col-lg-3"><button type="clear" class="btn btn-block btn-danger">重置</button></div>
+  <div class="col-lg-3"><button class="btn btn-block btn-info">返回</button></div> 
+  </div>
+			</form>
+			<!--right end-->
+		</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/addBook.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script src="js/jquery-1.3.1.js" type="text/javascript" charset="utf-8"></script>
+		
+			<script type="text/javascript">
+			
+			
+			function hide1(){
+				$('#i1').hide();
+				$('#i2').show();
+			}
+			
+			function hide2(){
+				$('#i1').show();
+				$('#i2').hide();
+			}
+		</script>
+		</script>
+	</head>
+	<body>
+		<header class="col-lg-12"><h3 style="margin-top: 0px;"><b>===用户信息管理===</b></h3></header>
+		<div class="row">
+		<div class="left col-lg-4">
+			<div class="head1" style="text-align: center;">
+				<img src="img/smallbook.jpg" width="40px;"height="40px" />用户信息管理
+			<!--head1 end-->
+			</div>
+			<div class="ul1">
+			<ul>
+				<li><b>用户信息冻结/解冻：</b>用户信息可以被冻结或解冻，但不可以添加、修改和删除。点击“冻结/解冻”栏中的“锁头”图标可以冻结用户；点击“解冻/冻结”栏中的“钥匙”图标可以解冻用户。</li>
+				<li><b>用户信息查看:</b>可以查看用户的基本信息，但不可以查看用户密码。</li>
+				
+			</ul>
+			<!--ul1 end-->
+			</div>
+			<!--left end-->
+		</div>
+		<div class="right col-lg-7" style="position: relative;">
+			<form>
+				<table class="table">
+					<tr>
+						<td>用户名</td>
+						<td>真实姓名</td>
+						<td>城市</td>
+						<td>电话</td>
+						<td>Email</td>
+						<td>销售额</td>
+						<td>冻结/解冻</td>
+					</tr>
+					<tr>
+						<td>数据绑定</td>
+						<td>数据绑定</td>
+						<td>数据绑定</td>
+						<td>数据绑定</td>
+						<td>数据绑定</td>
+						<td>数据绑定</td>
+						<td class="pic1">
+							<a>
+								<img id="i1"src="img/knock.PNG"width="20px"height="20px" onclick="hide1()">
+								<img id="i2" src="img/key.PNG"width="20px"height="20px" style="display:none;" onclick="hide2()">
+							</a>
+						</td>
+					</tr>
+				
+				</table>
+			</form>
+			<!--right end-->
+		</div>
+		<div class="index" style="position: absolute;margin: 100px 0px 0px 1100px;">
+			
+			<ul class="pagination">
+  			<li><a href="#">&laquo;</a></li>
+  			<li><a href="#">1</a></li>
+  			<li><a href="#">2</a></li>
+  			<li><a href="#">3</a></li>
+  			<li><a href="#">4</a></li>
+  			<li><a href="#">5</a></li>
+  			<li><a href="#">&raquo;</a></li>
+			</ul>
+		</div>
+		</div>
+	</body>
+</html>

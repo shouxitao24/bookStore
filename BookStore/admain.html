@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/11-86.css"/>
+		<link rel="stylesheet" type="text/css" href="css/SpryMenuBarHorizontal.css"/>
+		<script src="js/SpryMenuBar.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		
+			function get(value){
+				$("#id").attr("src",value)
+			}
+		</script>
+		
+		
+	</head>
+	<body>
+		<div id="bg">
+  <div id="menu">
+    <ul id="MenuBar1" class="MenuBarHorizontal">
+    <li><a href="#"onclick="get('adminfirst.html')">首页</a>    </li>
+    <li><a href="#">图书管理</a>         <ul>
+    <li><a href="#"onclick="get('bookManage.html')">图书管理</a></li>
+        <li><a href="#"onclick="get('addBook.html')">新增图书</a></li>
+        <li><a href="#"onclick="get('bookEdit.html')">修改图书</a></li>
+      </ul>
+    </li>
+    <li><a class="MenuBarItemSubmenu" href="#" onclick="get('userManage.html')">用户管理</a>
+ 
+    </li>
+    <li><a href="#" class="MenuBarItemSubmenu"onclick="get('orderManage.html')">订单管理</a></li>
+    <li><a href="#" class="MenuBarItemSubmenu">公告管理</a>
+      <ul>
+        <li><a href="#"onclick="get('postManage.html')">公告一览</a></li>
+        <li><a href="#"onclick="get('addpost.html')">新增公告</a></li>
+      </ul>
+    </li>
+    <li><a href="#" class="MenuBarItemSubmenu">投票系统</a>
+      <ul>
+        <li><a href="#"onclick="get('voteManage.html')">投票项目一览</a></li>
+        <li><a href="#"onclick="get('addvote.html')">添加投票项目</a></li>
+      </ul>
+    </li>
+    <li><a href="#" class="MenuBarItemSubmenu">关于我们</a>
+    </li>
+    <li><a href="#" class="MenuBarItemSubmenu">联系我们</a>
+      <ul>
+        <li><a href="#">张宇</a></li>
+        <li><a href="#">张涛</a></li>
+        <li><a href="#">夏晶</a></li>
+        <li><a href="#">高梦月</a></li>
+      </ul>
+    </li>
+  </ul>
+  </div>
+  <div class="header">
+    <div class="right_header" style="float: right;font-size: 24px;">Welcome Admin| <a href="adminlogin.html" class="logout">返回登陆界面</a></div>
+    </div>
+</div>
+<div class="main">
+	<iframe src="adminfirst.html" id="id" width="100%" height="580px" scrolling="no">
+          </iframe>
+</div>
+<div id="bottom">
+    <p>小组简介 | 关于我们 | 推广服务 | 帮助中心 | 网站地图 | 联系我们 | 留言<br />
+        Copyright © 2016-2020 design java,All Rights Reserve<br />
+        E-mail：shouxitao24@163.com Tel：151XXXXXXXX 苏AXXXXXXXX号</p>
+        <div id="bg01"></div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../img/SpryMenuBarDownHover.gif", imgRight:"../img/SpryMenuBarRightHover.gif"});
+</script>
+	</body>
+</html>
